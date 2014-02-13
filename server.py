@@ -1,8 +1,5 @@
 # Import your application as:
-# from wsgi import application
-# Example:
-
-from wsgi import application
+from wsgi import *
 
 # Import CherryPy
 import cherrypy
@@ -10,8 +7,8 @@ import cherrypy
 if __name__ == '__main__':
 
     # Mount the application
-    cherrypy.tree.graft(application, "/")
-
+    cherrypy.tree.graft(index, "/")
+    cherrypy.tree.graft(login, "/login")
     # Unsubscribe the default server
     cherrypy.server.unsubscribe()
 
@@ -31,18 +28,6 @@ if __name__ == '__main__':
 
     # Subscribe this server
     server.subscribe()
-
-    # Example for a 2nd server (same steps as above):
-    # Remember to use a different port
-
-    # server2             = cherrypy._cpserver.Server()
-
-    # server2.socket_host = "0.0.0.0"
-    # server2.socket_port = 8081
-    # server2.thread_pool = 30
-    # server2.subscribe()
-
-    # Start the server engine (Option 1 *and* 2)
 
     cherrypy.engine.start()
     cherrypy.engine.block()
