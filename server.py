@@ -9,13 +9,10 @@ if __name__ == '__main__':
     # Mount the application
     cherrypy.tree.graft(index, "/")
     cherrypy.tree.graft(login, "/login")
-<<<<<<< HEAD
     cherrypy.tree.graft(lst, "/list")
     cherrypy.tree.graft(take, "/take")
     cherrypy.tree.graft(view, "/view")
     cherrypy.tree.graft(modify, "/modify")
-=======
->>>>>>> a57c26c3ddd48eab9398844e481f1751b210806f
     # Unsubscribe the default server
     cherrypy.server.unsubscribe()
 
