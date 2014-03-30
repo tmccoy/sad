@@ -3,7 +3,6 @@ from app.index import generate_index_page
 def index(env, start_response):
     start_response('200 OK', [('Content-Type', 'text/html')])
     new_login = generate_index_page()
-from app.login_page import generate_login_page
 
 def index(env, start_response):
     start_response('200 OK', [('Content-Type', 'text/html')])
