@@ -1,4 +1,4 @@
-from app.index import generate_index_page
+from app.index.index import generate_index_page
 
 def index(env, start_response):
     start_response('200 OK', [('Content-Type', 'text/html')])

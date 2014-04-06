@@ -1,10 +1,15 @@
+import os
+
+appdir = os.path.dirname(os.path.abspath('index.py'))
+htmldir= '/app/index/html/index'
+
 class generate_index_page(object):
     def __init__(self):
         self.username = ""
         self.password = ""
 
     def show_login(self):
-        with open('/home/cmercer2/Documents/SAD/app/index.html', 'r') as template:
+        with open(appdir+htmldir, 'r') as template:
             html = template.read()
             return html
 
