@@ -24,4 +24,8 @@ def view(env, start_response):
 def modify(env, start_response):
     start_response('200 OK', [('Content-Type', 'text/html')])
     return ["modify page"]
-    return ["test"]
+
+def add(env, start_response):
+    start_response('200 OK', [('Content-Type', 'text/html')])
+    return ["add page"]
+
