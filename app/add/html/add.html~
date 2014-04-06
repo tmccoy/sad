@@ -2,5 +2,24 @@
 
 <head> 
 	<title>Shift Exchange System</title>
-	<link rel="stylesheet" href="../assets/loggedinstyle.css">
+	<link rel="stylesheet" href="../assets/addstyle.css">
 </head>
+<div id="header">
+<form action="../../index/html/index">
+	<input class="logout" type="submit" id="logout" value="Logout">
+</form>
+	<h1>Shift Exchange System - Add Shift</h1>
+</div>
+<div id="shiftform">
+	<form>
+			Shift Date: <input type="date" name="shift_date"/>
+			Start Time: <input type="time" name="start_time"/>
+			End Time: <input type = "time" name="end_time"/>
+			Manager: <select name="mgr_name" id="mgr_list">
+							<option value="manager_1">Manager_1</option>
+							<option value="manager_2">Manager_2</option>
+							<option value="manager_3">Manager_3</option>
+							<option value="manager_4">Manager_4</option>
+						</select>
+	</form>	
+</div>
