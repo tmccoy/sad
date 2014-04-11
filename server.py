@@ -4,7 +4,7 @@ import os
 
 class LoginPage(object):
     def __init__(self):
-        self.appdir = os.path.dirname(os.path.abspath('index.py'))
+        self.appdir = os.path.dirname(os.path.abspath('server.py'))
         
     @cherrypy.expose
     def index(self, **kwargs):
