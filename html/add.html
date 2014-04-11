@@ -2,7 +2,7 @@
 
 <head> 
 	<title>Shift Exchange System</title>
-	<link rel="stylesheet" href="../assets/addstyle.css">
+	<link rel="stylesheet" href="../app/add/assets/addstyle.css">
 </head>
 <div id="header">
 <form action="index">
@@ -10,16 +10,19 @@
 </form>
 	<h1>Shift Exchange System - Add Shift</h1>
 </div>
-<div id="shiftform">
-	<form>
-			Shift Date: <input type="date" name="shift_date"/>
-			Start Time: <input type="time" name="start_time"/>
-			End Time: <input type = "time" name="end_time"/>
-			Manager: <select name="mgr_name" id="mgr_list">
-							<option value="manager_1">Manager_1</option>
-							<option value="manager_2">Manager_2</option>
-							<option value="manager_3">Manager_3</option>
-							<option value="manager_4">Manager_4</option>
-						</select>
-	</form>	
+<div id="shiftformbackround">
+    <div id="shiftform">
+	   <form>
+			<p><label>Shift Date:</label><input type="date" name="shift_date"/></p>
+			<p><label>Start Time:</label><input type="time" name="start_time"/></p>
+			<p><label>End Time:</label><input type ="time" name="end_time"/></p>
+			<p><label>Manager:</label><select name="mgr_name" id="mgr_list">
+				        <option value="manager_1">Manager_1</option>
+				        <option value="manager_2">Manager_2</option>
+				        <option value="manager_3">Manager_3</option>
+				        <option value="manager_4">Manager_4</option>
+                     </select></p>
+            <p><input id="submit" type=submit name="Submit"/></p>
+	   </form>	
+    </div>
 </div>
