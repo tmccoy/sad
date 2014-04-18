@@ -2,5 +2,45 @@
 
 <head> 
 	<title>Shift Exchange System</title>
-	<link rel="stylesheet" href="../assets/modifyempstyle.css">
+	<link rel="stylesheet" href="http://0.0.0.0:8080/css/modifyempstyle.css">
 </head>
+<div id="header">
+<form action="index">
+	<input class="logout" type="submit" id="logout" value="Logout">
+</form>
+	<h1>Shift Exchange System - Home</h1>
+</div>
+<div id="newempformbackround">
+    <div id="newemp">
+	   <form>
+	   	<h2>Add New Employee</h2>
+			<p><label>Employee First Name:</label><input type="text" name="first_name" required/></p>
+			<p><label>Employee Last Name:</label><input type="text" name="last_name" required/></p>
+			<p><label>Email Address:</label><input type ="email" name="email_address" placeholder="yourname@email.com" required/></p>
+            <p><input id="submit" type=submit name="Add Employee"/></p>
+	   </form>	
+    </div>
+</div>
+<div id="body">
+	<div id="list">
+		<table>
+			<h2>Employee List</h2>
+			<tr style="font-weight: bold;">
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Email Address</th>
+				<th>Delete?</th>			
+			</tr>		
+			<tr>
+				<td>firstnamehere</td>
+				<td>lastnamehere</td>
+				<td>emailhere</td>
+				<td><form action=""> <input type="checkbox" name="delete" value="true"/>Yes</td>			
+			</tr>
+			</table>
+			<input type="submit" id="emp" value="Delete Checked"/></form>
+		
+	</div>
+</div>
+<div id="footer">
+Systems of Analysis and Design - DDriver, TMcCoy, CMercer 2013</div>

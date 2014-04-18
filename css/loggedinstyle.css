@@ -31,7 +31,7 @@ h1 {
    margin-left: 10px;
 }
 #add, #emp {
-	margin-left: 10%;
+	margin-left: 25px;
     margin-bottom: 1%;
 	padding: 5px;
 	width: 100px;
@@ -45,7 +45,7 @@ h1 {
 
 #body {
 	float: left;
-	margin-left: 10%;
+	margin-left: 25px;
 	background-color:#235966;
 	padding: 25px;
 	border: 1px solid white;
