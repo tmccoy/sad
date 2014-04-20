@@ -1,5 +1,6 @@
 html {
-background-color: #2f7a8d;
+background-image:url("background.jpg");
+background-attachment: fixed;
 font-size: 10pt;
 font-family: Arial;
 }
@@ -50,7 +51,7 @@ label {
 }
 .loginform input[type=submit] {
 	border: 1px solid rgba(0, 0, 0, 0.3);
-	background: -moz-linear-gradient(top, #235966 0%, #17373f 100%);
+	background: -webkit-linear-gradient(top,  #64c8ef 0%,#00a2e2 100%);
 	color: #fff;
 	padding: 5px 15px;
 	margin-right: 0;

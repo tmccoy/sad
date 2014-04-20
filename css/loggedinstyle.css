@@ -1,5 +1,6 @@
 html {
-background-color: #2f7a8d;
+background-image:url("background.jpg");
+background-attachment: fixed;
 font-size: 10pt;
 font-family: Arial;
 }
@@ -14,46 +15,62 @@ h1 {
    border: 1px solid rgba(0, 0, 0, 0.3);
 }
 #header {
-	background-color:#235966;
+	background-color:#244177;
 	margin: 25px;
 	padding: 5px;
 	border: 1px solid white;
 }
 .button {
-	width: 130px;
-	margin: 10px auto;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	background: -webkit-linear-gradient(top,  #64c8ef 0%,#00a2e2 100%);
+	color: #fff;
+	padding: 5px 15px;
+	margin-right: 0;
+	margin-top: 15px;
+	border-radius: 3px;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3)
+}
+#add, #emp {
+	width: 100px;
+	margin-left: 10px;
+   margin-bottom: 10px;
+   display: inline;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	background: -webkit-linear-gradient(top,  #64c8ef 0%,#00a2e2 100%);
+	color: #fff;
+	padding: 5px 15px;
+	margin-right: 0;
+	margin-top: 5px;
+	border-radius: 3px;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3)
+}
+
+#buttonform {
+	margin-left: 25px;
 	padding: 5px;
+	width: 120px;
 	background-color: rgba(250,250,250,0.5);
 	border-radius: 5px;
    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2), 
     			inset 0px 1px 0px 0px rgba(250, 250, 250, 0.5);
    border: 1px solid rgba(0, 0, 0, 0.3);
-   margin-left: 10px;
-}
-#add, #emp {
-	margin-left: 25px;
-    margin-bottom: 1%;
-	padding: 5px;
-	width: 100px;
 }
 
 .logout {
 	float: right;
 	margin: 5px;
 	padding: 5px 10px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	background: -webkit-linear-gradient(top,  #64c8ef 0%,#00a2e2 100%);
+	color: #fff;
+	border-radius: 3px;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3)
 }
 
-#body {
+#avlist {	
 	float: left;
-	margin-left: 25px;
-	background-color:#235966;
-	padding: 25px;
-	border: 1px solid white;
-
-}
-#list {	
-	float: left;
-	margin: 0 auto;
+	display: inline;
+	margin: 25px;
 	padding: 5px;
 	background-color: rgba(250,250,250,0.5);
 	border-radius: 5px;
@@ -62,6 +79,18 @@ h1 {
    border: 1px solid rgba(0, 0, 0, 0.3);
 	
 }
+#tklist {
+	float: left;
+	display: inline;
+	margin: 25px;
+	padding: 5px;
+	background-color: rgba(250,250,250,0.5);
+	border-radius: 5px;
+   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2), 
+    			inset 0px 1px 0px 0px rgba(250, 250, 250, 0.5);
+   border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
 table,th,td {
 	width: auto;
 	border:1px solid black;
@@ -70,11 +99,17 @@ table,th,td {
 	text-align: center;
 	padding: 8px;
 }
-#vwshift {
+#tkshift {
 	height: 28px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	background: -webkit-linear-gradient(top,  #64c8ef 0%,#00a2e2 100%);
+	color: #fff;
+	padding: 5px 15px;
+	border-radius: 3px;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3)
 }
 #footer {
-	background-color:#235966;
+	background-color:#244177;
 	clear:both;
 	text-align:center;
 	position: absolute;

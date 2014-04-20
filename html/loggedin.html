@@ -10,13 +10,36 @@
 </form>
 	<h1>Shift Exchange System - Home</h1>
 </div>
+<div id="buttonform">
 <form action="add.html">
 	<input type="submit" id="add" value="Add Shift">
 </form>
-
-<div id="body">
-	<div id="list">
+</div>
+<div id="avlist">
 	<table>
+		<h2>Available Shifts</h2>
+		<tr style="font-weight: bold;">
+			<th>Date of Shift</th>
+			<th>Start Time</th>
+			<th>End Time</th>
+			<th>Employee</th>
+			<th>Manager</th>
+			<th>Take Shift</th>	
+		</tr>
+		<tr>
+			<td>date goes here</td>
+			<td>start time goes here</td>
+			<td>end time goes here</td>
+			<td>employee name</td>
+			<td>manager name</td>
+			<td><form action="SOME ACTION HERE"> <input type="submit" id ="tkshift" value = "Take Shift"></form></td>	
+		</tr>
+	</table>
+</div>
+
+<div id="tklist">
+	<table>
+		<h2>Already Taken Shifts</h2>
 		<tr style="font-weight: bold;">
 			<th>Date of Shift</th>
 			<th>Start Time</th>
@@ -24,7 +47,6 @@
 			<th>Employee</th>
 			<th>Covered By</th>
 			<th>Manager</th>	
-			<th>Take Shift</th>
 		</tr>
 		<tr>
 			<td>date goes here</td>
@@ -33,11 +55,9 @@
 			<td>employee name</td>
 			<td>new employee</td>
 			<td>manager name</td>	
-			<td><form action="../../view/html/view.html"> <input type="submit" id ="vwshift" value = "View Shift"></form></td>
 		</tr>
-
 	</table>
-	</div>
+
 </div>
-<div id="footer">
-Systems of Analysis and Design - DDriver, TMcCoy, CMercer 2013</div>
+
+

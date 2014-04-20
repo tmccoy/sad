@@ -5,26 +5,28 @@
 	<link rel="stylesheet" href="http://0.0.0.0:8080/css/loggedinstyle.css">
 </head>
 <div id="header">
-<form action="index">
-	<input class="logout" type="submit" id="logout" value="Logout">
-</form>
+	<form action="index">
+		<input class="logout" type="submit" id="logout" value="Logout">
+	</form>
 	<h1>Shift Exchange System - Home</h1>
 </div>
-<form action="http://0.0.0.0:8080/add/">
-	<input type="submit" id="add" value="Add Shift">
-</form>
-<form action="modifyemp.html">
+<div id="buttonform">
+	<form action="http://0.0.0.0:8080/add/">
+		<input type="submit" id="add" value="Add Shift">
+	</form>
+	<form action="modifyemp.html">
 			<input type="submit" id="emp" value="Employees">
-		</form>
-<div id="body">
-	<div id="list">
+	</form>
+</div>
+
+<div id="avlist">
 	<table>
+		<h2>Available Shifts</h2>
 		<tr style="font-weight: bold;">
 			<th>Date of Shift</th>
 			<th>Start Time</th>
 			<th>End Time</th>
 			<th>Employee</th>
-			<th>Covered By</th>
 			<th>Manager</th>
 			<th>Take Shift</th>	
 		</tr>
@@ -33,13 +35,33 @@
 			<td>start time goes here</td>
 			<td>end time goes here</td>
 			<td>employee name</td>
-			<td>new employee</td>
 			<td>manager name</td>
 			<td><form action="SOME ACTION HERE"> <input type="submit" id ="tkshift" value = "Take Shift"></form></td>	
 		</tr>
-
 	</table>
-	</div>
 </div>
-<div id="footer">
-Systems of Analysis and Design - DDriver, TMcCoy, CMercer 2013</div>
+
+<div id="tklist">
+	<table>
+		<h2>Already Taken Shifts</h2>
+		<tr style="font-weight: bold;">
+			<th>Date of Shift</th>
+			<th>Start Time</th>
+			<th>End Time</th>
+			<th>Employee</th>
+			<th>Covered By</th>
+			<th>Manager</th>	
+		</tr>
+		<tr>
+			<td>date goes here</td>
+			<td>start time goes here</td>
+			<td>end time goes here</td>
+			<td>employee name</td>
+			<td>new employee</td>
+			<td>manager name</td>	
+		</tr>
+		
+	</table>
+
+</div>
+

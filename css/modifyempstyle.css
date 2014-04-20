@@ -1,5 +1,6 @@
 html {
-background-color: #2f7a8d;
+background-image:url("background.jpg");
+background-attachment: fixed;
 font-size: 10pt;
 font-family: Arial;
 }
@@ -18,7 +19,7 @@ h2 {
 
 }
 #header {
-	background-color:#235966;
+	background-color:#244177;
 	margin: 25px;
 	padding: 5px;
 	border: 1px solid white;
@@ -38,10 +39,16 @@ h2 {
 	float: right;
 	margin: 5px;
 	padding: 5px 10px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	background: -webkit-linear-gradient(top,  #64c8ef 0%,#00a2e2 100%);
+	color: #fff;
+	border-radius: 3px;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3)
 }
 #newemp {
 	float: left;
-	margin-left: 40%;
+	display: inline;
+	margin: 25px;
 	padding: 5px;
 	background-color: rgba(250,250,250,0.5);
 	border-radius: 5px;
@@ -61,28 +68,20 @@ input, select {
     float: left;
 }
 #submit {
-    margin: 5px;
-    float: right;
-}
-#body {
-	float: left;
-	margin-top: 25px;
-	margin-left: 36%;
-	background-color:#235966;
-	padding: 25px;
-	border: 1px solid white;
-
-}
-#newempbackground {
-	float: left;
-	background-color:#235966;
-	padding: 25px;
-	border: 1px solid white;
-
+   margin: 5px;
+   float: right;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	background: -webkit-linear-gradient(top,  #64c8ef 0%,#00a2e2 100%);
+	color: #fff;
+	padding: 5px 15px;
+	border-radius: 3px;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3)
 }
 #list {	
 	float: left;
-	margin-left: 10px;
+	display: inline;
+	margin: 25px;
+	margin-left: 17.5%;
 	padding: 5px;
 	background-color: rgba(250,250,250,0.5);
 	border-radius: 5px;
@@ -103,6 +102,11 @@ table,th,td {
 	float: right;
 	padding: 5px;
 	margin-top: 5px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	background: -webkit-linear-gradient(top,  #64c8ef 0%,#00a2e2 100%);
+	color: #fff;
+	border-radius: 3px;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3)
 }
 #footer {
 	background-color:#235966;
